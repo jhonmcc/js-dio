@@ -27,5 +27,6 @@ printSomething.apply(pessoa);
 const returnName = function(){
     return this.name;
 }
+
 let nameProp = returnName.bind({name: 'pessoaName'})
 console.log(nameProp());
